@@ -1,0 +1,61 @@
+#Problem 1: Calculate the Sum of Natural Numbers
+
+n=int(input("Enter a number:"))
+sum=0
+for i in range(0,n+1):
+    sum=sum+i
+
+print(sum)
+
+
+Problem 2: Check for Prime Number
+
+n=int(input("Enter a number:"))
+
+if n<2:
+    print("Not a prime")
+else:
+    for i in range(2,n):
+        if(n%i==0):
+            print("Not a prime")
+            break
+    else:
+         print("It is a prime")
+
+
+
+Problem 3: Find the Maximum of Three Numbers
+
+a=int(input("Enter a number,a:"))
+b=int(input("Enter a number,b:"))
+c=int(input("Enter a number,c:"))
+
+if a>b and a>c:
+    print("a is the greatest")
+elif b>a and b>c:
+    print("b is the greatest")
+else:
+    print("c is the greatest")
+
+
+
+Problem 4: Factorial Calculation
+
+n=int(input("Enter a number:"))
+tot=1
+for i in range(1,n+1):
+    tot=tot*i
+
+print(tot)
+
+
+Problem 5: Check if a Number is Even or Odd
+
+n=int(input("Enter a number:"))
+if n<1:
+    print("Enter a positive number")
+else:
+    if n%2==0:
+        print("n is even")
+    else:
+        print("n is odd")
